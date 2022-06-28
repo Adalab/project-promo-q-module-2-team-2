@@ -1,0 +1,88 @@
+.desing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-principal;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $white-two;
+
+  &__title {
+    color: $gunmetal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 281px;
+    padding-top: 27px;
+    padding-bottom: 22px;
+
+    &--icon {
+      color: $dull-orange;
+      font-size: 18px;
+      padding-right: 12px;
+    }
+  }
+
+  &__div {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--title3 {
+      padding-left: 19px;
+      color: $gunmetal;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.color1 {
+  background-color: $dark-green-blue;
+}
+
+.color2 {
+  background-color: $dirty-blue;
+}
+
+.color3 {
+  background-color: $hospital-green;
+}
+
+.color4 {
+  background-color: $dried-blood;
+}
+
+.color5 {
+  background-color: $rusty-red;
+}
+
+.color6 {
+  background-color: $tomato;
+}
+
+.color7 {
+  background-color: $slate;
+}
+
+.color8 {
+  background-color: $faded-orange;
+}
+
+.color9 {
+  background-color: $light-grey-blue;
+}
+
+.sqColor {
+  width: 30px;
+  height: 25px;
+}
+
+.familyColor1,
+.familyColor2,
+.familyColor3 {
+  display: flex;
+  padding-bottom: 20px;
+}

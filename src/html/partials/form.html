@@ -1,35 +1,15 @@
-<form>
-  <fieldset>
-    <legend><i class="fa-solid fa-object-ungroup"></i>Diseña</legend>
+<form class="form">
+  <include src="./desing.html"></include>
 
-    <h2>Colores</h2>
-    <div>
-      <label class="familyColor1" for="familyColor1">
-        <input id="familyColor1" type="radio" value="1" name="color" />
-        <div class="color1 sqColor"></div>
-        <div class="color2 sqColor"></div>
-        <div class="color3 sqColor"></div>
-      </label>
-      <label class="familyColor2" for="familyColor2">
-        <input id="familyColor2" type="radio" value="2" name="color" />
-        <div class="color4 sqColor"></div>
-        <div class="color5 sqColor"></div>
-        <div class="color6 sqColor"></div>
-      </label>
-      <label class="familyColor3" for="familyColor3">
-        <input id="familyColor3" type="radio" value="3" name="color" />
-        <div class="color7 sqColor"></div>
-        <div class="color8 sqColor"></div>
-        <div class="color9 sqColor"></div>
-      </label>
-    </div>
+
+  <fieldset class="fill">
+    <include src="./fill.html"></include>
   </fieldset>
 
   <fieldset>
-    <legend>Rellena</legend>
-  </fieldset>
 
-  <fieldset>
-    <legend>Comparte</legend>
+    <include src="./share.html"> </include>
+
+
   </fieldset>
 </form>

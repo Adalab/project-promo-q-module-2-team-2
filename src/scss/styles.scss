@@ -1,12 +1,16 @@
-
 // @import 'core/functions';
 // @import 'core/mixins';
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
 
-@import 'core/variables';
-@import 'core/reset';
-@import 'layout/form';
-@import 'layout/footer';
-// @import 'layout/header';
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/share";
+@import "layout/footer";
+@import "layout/mainCard";
+@import "layout/preview";
+@import "layout/fill";
+@import "layout/mainLanding";
+@import "layout/desing";

@@ -13,12 +13,11 @@
     }
 
     &__box{
-        //font-family: Monsterrat;
+        //font-family: $font-family-secondary;
         width: 240px;
         background-color: $white-two;
         margin-bottom: 40px;
         margin-top: 20px;
-       // margin-left: 45px;
         position: relative;
         box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     }
@@ -78,7 +77,7 @@
     &__reset{
         width: 75px;
         height: 30px;
-       // font-family: 'OpenSans';
+        //font-family: $font-family-principal;
         font-size: 12px;
         color: $gunmetal;
         text-transform: uppercase;
@@ -86,7 +85,7 @@
         border-radius: 15px;
         border: solid 1px $white-two;
         margin-top: 40px;
-        margin-left: -165px;
+        margin-left: -170px;
     }
 
 }
@@ -94,13 +93,5 @@
 .fa-trash-can{
     color: $gunmetal;
     font-size: 12px;
-    //margin: 5px 10px;
-}
 
-/* MediaQuerie main
-
-@media all and (min-width: 768px){
-    display: flex;
-    flex-direction: row-reverse;
 }
-*/

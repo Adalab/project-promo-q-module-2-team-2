@@ -1,28 +1,32 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $white-three;
-    border-top: solid 1px $white-three;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-three;
+  border-top: solid 1px $white-three;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footerCopy {
-    color: $brownish-grey;
-    padding-top: 18px;
-    padding-bottom: 12px;
-    opacity: 0.5;
-    @media all and (min-width: 768px) {
-        margin: 18px 380px 22px 41px;
-    }
+  color: $brownish-grey;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  opacity: 0.5;
+  @media all and (min-width: 768px) {
+    margin: 18px 380px 22px 41px;
+  }
 }
 
 .footerImage {
-    width: 103px;
-    height: 40px;
-    margin: 12px 47px 20px 48px;
-    @media all and (min-width: 768px) {
-        margin: 10px 40px;
-    }
+  width: 103px;
+  height: 40px;
+  margin: 12px 47px 20px 48px;
+  @media all and (min-width: 768px) {
+    margin: 10px 40px;
+  }
 }
-

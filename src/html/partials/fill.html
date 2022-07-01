@@ -1,29 +1,42 @@
-<include src="./headerForm.html" title="Rellena" class="fill__title" icon="iconStyle fa fa-keyboard"></include>
+<fieldset class="fill">
+  <include src="./headerForm.html" titleJs="js_fillTitle" title="Rellena"
+    icon="fa fa-keyboard" classJs="js_iconFill">
+  </include>
+  <div class=" fillInput js_divFill collapsed">
+    <label class="fillInput__label" for="fullName">Nombre completo</label>
+    <input class="fillInput__input" type="text" id="fullName" name="fullName"
+      placeholder="Ej : Anakin Skywalker" required />
 
-<label class="fill__label" for="fullName">Nombre completo</label>
-<input class="fill__input" type="text" id="fullName" name="fullName" placeholder="Ej : Anakin Skywalker" required>
+    <label class="fillInput__label" for="job">Puesto</label>
+    <input class="fillInput__input" type="text" id="job" name="job"
+      placeholder="Ej : Jedi Knight" required />
 
-<label class="fill__label" for="job">Puesto</label>
-<input class="fill__input" type="text" id="job" name="job" placeholder="Ej : Jedi Knight" required>
+    <p class="fillInput__label">Imagen de perfil</p>
+    <div class="fillInput__profile">
+      <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
+      <input type="file" name="" id="img-selector"
+        class="action__hiddenField js__profile-upload-btn" />
 
-<p class="fill__label">Imagen de perfil</p>
-<div class="fill__profile">
-    <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
-    <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+      <div class="profile__image js__profile-image" style="
+        background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+      "></div>
+      <div class="profile__preview js__profile-preview"></div>
+    </div>
 
-    <div class="profile__image js__profile-image"
-        style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE)"></div>
-    <div class="profile__preview js__profile-preview"></div>
-</div>
+    <label class="fillInput__label" for="Email">Email</label>
+    <input class="fillInput__input" type="mail" id="Email" name="Email"
+      placeholder="Ej : skyguy@gmail.com" required />
 
-<label class="fill__label" for="Email">Email</label>
-<input class="fill__input" type="mail" id="Email" name="Email" placeholder="Ej : skyguy@gmail.com" required>
+    <label class="fillInput__label" for="tel">Teléfono</label>
+    <input class="fillInput__input" type="tel" id="tel" name="tel"
+      placeholder="Ej : 555-55-55-55" required maxlength="9" />
 
-<label class="fill__label" for="tel">Teléfono</label>
-<input class="fill__input" type="tel" id="tel" name="tel" placeholder="Ej : 555-55-55-55" required maxlength="9">
+    <label class="fillInput__label" for="linkedin">Linkedin</label>
+    <input class="fillInput__input" type="url" id="linkedin" name="linkedin"
+      placeholder="Ej : linkedin.com/sky.guy" required />
 
-<label class="fill__label" for="linkedin">Linkedin</label>
-<input class="fill__input" type="url" id="linkedin" name="linkedin" placeholder="Ej : linkedin.com/sky.guy" required>
-
-<label class="fill__label" for="github">Github</label>
-<input class="fill__input" type="url" id="github" name="github" placeholder="Ej : @sky.guy" required>
+    <label class="fillInput__label" for="github">Github</label>
+    <input class="fillInput__input" type="url" id="github" name="github"
+      placeholder="Ej : @sky.guy" required />
+  </div>
+</fieldset>

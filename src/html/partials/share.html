@@ -1,28 +1,26 @@
 <fieldset class="share">
-    <include src="./headerForm.html" title="Comparte" class="share__title" icon="fa-solid fa-share-nodes"
-        icon2=" share__title--icon">
-    </include>
+  <include src="./headerForm.html" titleJs="js_shareTitle" title="Comparte" icon="fa fa-share-nodes"
+    classJs="js_iconShare">
+  </include>
+  <section class="js_divShare collapsed">
+    <button class="share__button js_shareButton ">
+      <i class="fa-regular fa-address-card share__button--icon"></i>Crear
+      tarjeta
+    </button>
 
+    <div class="card  js_cardShare collapsed">
+      <p class="card__text">La tarjeta ha sido creada:</p>
+      <p class="card__link">link de prueba</p>
 
+      <div class="card__twitter">
+        <i class="fa-brands fa-twitter card__twitter--icon"></i>
 
-
-    <button class="share__button"> <i class="fa-regular fa-address-card share__button--icon"></i>Crear tarjeta</button>
-
-
-    <div class="card">
-
-        <p class="card__text"> La tarjeta ha sido creada:</p>
-        <p class="card__link">link de prueba</p>
-
-
-        <div class="card__twitter">
-            <i class="fa-brands fa-twitter card__twitter--icon"></i>
-
-            <a class="card__twitter--link "
-                href="https://twitter.com/intent/tweet?text= adalab&url=http://localhost:3000/cards.html&hashtags=profilecard"
-                target="_blank">
-                Compartir en twitter </a>
-
-        </div>
+        <a class="card__twitter--link"
+          href="https://twitter.com/intent/tweet?text= adalab&url=http://localhost:3000/cards.html&hashtags=profilecard"
+          target="_blank">
+          Compartir en twitter
+        </a>
+      </div>
     </div>
+  </section>
 </fieldset>

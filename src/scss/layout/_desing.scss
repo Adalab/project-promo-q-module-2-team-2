@@ -4,25 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: $font-family-principal;
   padding-bottom: 10px;
   border-bottom: 1px solid $white-two;
-
-  &__title {
-    color: $gunmetal;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: left;
-    width: 281px;
-    padding-top: 27px;
-    padding-bottom: 22px;
-
-    &--icon {
-      color: $dull-orange;
-      font-size: 18px;
-      padding-right: 12px;
-    }
-  }
 
   &__div {
     width: 280px;

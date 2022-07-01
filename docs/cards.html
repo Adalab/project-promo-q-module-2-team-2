@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/8c88b3fdc7.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="icon" href="./assets/images/favicon.jpg" />
+  <title>Design Awesome Cards</title>
+</head>
+
+<body>
+  <header class="header">
+      <div class="header__container">
+          <img class="header__container--logoProfile" src="./assets/images/logo-awesome-profile-cards.svg"
+              alt="logo awespne logo-awesome-profile-cards">
+      </div>
+  </header>
+  <main class="mainCard">
+    <section class="preview">
+        <button class="preview__reset">
+            <i class="fa-regular fa-trash-can"></i>
+            Reset  
+        </button>
+        <div class="preview__box">
+            <h3 class="preview__name">Nombre apellido</h3>
+            <p class="preview__job">Front-end developer</p>
+            <img class="preview__photo" src="../assets/images/img-preview.jpg" alt="profile preview">
+            <nav>
+                <ul class="preview__socialIcons">
+                    <li>
+                        <a href="" target="_blank" class="preview__icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" class="preview__icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                         <a href="" target="_blank" class="preview__icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="" target="_blank" class="preview__icon">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a>
+                     </li>
+                    
+                </ul>
+          </nav>
+            <div class="preview__rectangle"></div>
+        </div>
+    </section>
+    <form class="form">
+      <fieldset class="desing">
+        <!-- Plantilla  -->
+        <section class="headSection js_designTitle">
+          <h2 class=" headSection__title">
+            <i class="fa fa-object-ungroup"></i>Diseña
+          </h2>
+          <i class="fa-solid fa-angle-down js_iconDesign"></i>
+        </section>
+        <div class="desing__div js_divDesign collapsed">
+          <h3 class="desing__div--title3">Colores</h3>
+          <div class="desing__div--colors">
+            <label class="familyColor1" for="familyColor1">
+              <input id="familyColor1" type="radio" value="1" name="color" />
+              <div class="color1 sqColor"></div>
+              <div class="color2 sqColor"></div>
+              <div class="color3 sqColor"></div>
+            </label>
+            <label class="familyColor2" for="familyColor2">
+              <input id="familyColor2" type="radio" value="2" name="color" />
+              <div class="color4 sqColor"></div>
+              <div class="color5 sqColor"></div>
+              <div class="color6 sqColor"></div>
+            </label>
+            <label class="familyColor3" for="familyColor3">
+              <input id="familyColor3" type="radio" value="3" name="color" />
+              <div class="color7 sqColor"></div>
+              <div class="color8 sqColor"></div>
+              <div class="color9 sqColor"></div>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="fill">
+        <!-- Plantilla  -->
+        <section class="headSection js_fillTitle">
+          <h2 class=" headSection__title">
+            <i class="fa fa-keyboard"></i>Rellena
+          </h2>
+          <i class="fa-solid fa-angle-down js_iconFill"></i>
+        </section>
+        <div class=" fillInput js_divFill collapsed">
+          <label class="fillInput__label" for="fullName">Nombre completo</label>
+          <input class="fillInput__input" type="text" id="fullName" name="fullName"
+            placeholder="Ej : Anakin Skywalker" required />
+
+          <label class="fillInput__label" for="job">Puesto</label>
+          <input class="fillInput__input" type="text" id="job" name="job"
+            placeholder="Ej : Jedi Knight" required />
+
+          <p class="fillInput__label">Imagen de perfil</p>
+          <div class="fillInput__profile">
+            <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
+            <input type="file" name="" id="img-selector"
+              class="action__hiddenField js__profile-upload-btn" />
+
+            <div class="profile__image js__profile-image" style="
+              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+            "></div>
+            <div class="profile__preview js__profile-preview"></div>
+          </div>
+
+          <label class="fillInput__label" for="Email">Email</label>
+          <input class="fillInput__input" type="mail" id="Email" name="Email"
+            placeholder="Ej : skyguy@gmail.com" required />
+
+          <label class="fillInput__label" for="tel">Teléfono</label>
+          <input class="fillInput__input" type="tel" id="tel" name="tel"
+            placeholder="Ej : 555-55-55-55" required maxlength="9" />
+
+          <label class="fillInput__label" for="linkedin">Linkedin</label>
+          <input class="fillInput__input" type="url" id="linkedin" name="linkedin"
+            placeholder="Ej : linkedin.com/sky.guy" required />
+
+          <label class="fillInput__label" for="github">Github</label>
+          <input class="fillInput__input" type="url" id="github" name="github"
+            placeholder="Ej : @sky.guy" required />
+        </div>
+      </fieldset>
+      <fieldset class="share">
+        <!-- Plantilla  -->
+        <section class="headSection js_shareTitle">
+          <h2 class=" headSection__title">
+            <i class="fa fa-share-nodes"></i>Comparte
+          </h2>
+          <i class="fa-solid fa-angle-down js_iconShare"></i>
+        </section>
+        <section class="js_divShare collapsed">
+          <button class="share__button js_shareButton ">
+            <i class="fa-regular fa-address-card share__button--icon"></i>Crear
+            tarjeta
+          </button>
+
+          <div class="card  js_cardShare collapsed">
+            <p class="card__text">La tarjeta ha sido creada:</p>
+            <p class="card__link">link de prueba</p>
+
+            <div class="card__twitter">
+              <i class="fa-brands fa-twitter card__twitter--icon"></i>
+
+              <a class="card__twitter--link"
+                href="https://twitter.com/intent/tweet?text= adalab&url=http://localhost:3000/cards.html&hashtags=profilecard"
+                target="_blank">
+                Compartir en twitter
+              </a>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <span class="footerCopy">Bichotrónicas &copy;2022</span>
+    <div>
+      <img class="footerImage" src="./assets/images/logo-adalab.png" alt="logo adalab" />
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

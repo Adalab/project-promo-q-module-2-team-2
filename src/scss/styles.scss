@@ -14,3 +14,11 @@
 @import "layout/fill";
 @import "layout/mainLanding";
 @import "layout/desing";
+
+.collapsed {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
